@@ -1,11 +1,19 @@
 import java.time.LocalDate;
+import javax.swing.JFrame;
 
-public class PrimerGitJava
+public class PrimerGitJava extends JFrame
 {
+	
+	public PrimerGitJava()
+	{
+		super("Hola GIT");
+		super.setSize(300, 300);
+		super.setLocationRelativeTo(null);
+	}
+	
 	public static void main(String[] args)
 	{
-		System.out.println("Hola GIT");
-		System.out.println("La fecha actual es:");
-		System.out.println(LocalDate.now());
+		PrimerGitJava ventana = new PrimerGitJava();
+		ventana.setVisible(true);
 	}
 }
