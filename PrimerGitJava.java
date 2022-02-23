@@ -3,6 +3,7 @@ import javax.swing.JFrame;
 import javax.swing.JButton;
 import java.awt.BorderLayout;
 import javax.swing.JLabel;
+import java.awt.event.*;
 
 public class PrimerGitJava extends JFrame
 {
@@ -17,6 +18,15 @@ public class PrimerGitJava extends JFrame
 		
 		boton = new JButton("Mensaje");
 		
+		boton.addActionListener(new ActionListener(){
+			
+			@Override
+			public void actionPerformed(ActionEvent e)
+			{
+				System.out.println(e);
+			}
+		});
+			
 		super.add(boton, BorderLayout.SOUTH);
 	}
 	
